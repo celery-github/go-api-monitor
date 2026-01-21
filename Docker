@@ -1,0 +1,2 @@
+docker build -t go-api-monitor .
+docker run --rm go-api-monitor --config configs/sample.yaml --once
