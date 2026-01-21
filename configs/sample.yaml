@@ -1,0 +1,18 @@
+interval_seconds: 60
+timeout_seconds: 5
+
+endpoints:
+  - name: example
+    method: GET
+    url: https://example.com
+    expected_status: 200
+
+  - name: httpbin-200
+    method: GET
+    url: https://httpbin.org/status/200
+    expected_status: 200
+
+  - name: httpbin-500
+    method: GET
+    url: https://httpbin.org/status/500
+    expected_status: 200
